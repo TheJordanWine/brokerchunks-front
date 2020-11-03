@@ -30,7 +30,7 @@ doit() {
     mkdir -p target/dependency && (cd target/dependency; jar -xf ../${PACKAGE}-${VERSION}.jar)
 
     # Build container
-    docker build -t ${COMPANY}/${PACKAGE}:${VERSION} .
+    docker build -t ${COMPANY}/${PACKAGE} .
 
     return 0
 }
