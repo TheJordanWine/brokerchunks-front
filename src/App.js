@@ -1,9 +1,9 @@
-import "./App.css";
+import Window from "./components/Window";
 
 function App() {
   return (
-    <div className="App">
-      <h1>App Test</h1>
+    <div>
+      <Window></Window>
     </div>
   );
 }
