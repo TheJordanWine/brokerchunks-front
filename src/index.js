@@ -4,14 +4,15 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <Auth0Provider
     domain="drchunks.us.auth0.com"
     clientId="25TjkMABjimG2qduSSXVthnz5l1hHp58"
     redirectUri={window.location.origin}
-    audience="http://localhost:8080/api/v0/"
-    scope="read:current_user update:current_user_metadata"
+    audience="http://localhost:8080"
+    scope="read:accounts"
   >
     <React.StrictMode>
       <App />
